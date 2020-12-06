@@ -1,0 +1,198 @@
+.sobre{
+  background-color: #131313;
+  padding: 10rem 0;
+}
+
+.about_container{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  height: 90%;
+  z-index: 1;
+  width: 100%;
+  max-width: 1300px;
+  padding: 0 50px;
+}
+
+.about_content{
+  color: #fff;
+  width: 100%;
+}
+.about_content h1{
+ font-size: 2rem;
+
+ background: #00dbde;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #004ede, #004ede);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #00dbde, #004ede); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+ 
+  
+  background-size: 100%;
+   -webkit-background-clip: text; /*Deixar a cor do Backgroud na letra*/
+   -moz-background-clip: text; /*Utilizamos este para ficar a mesma coisa no Mozila Firefox*/
+   
+   -webkit-text-fill-color: transparent; /*Retirar o azulzin do link*/
+   -moz-text-fill-color: transparent;/*Utilizamos este para ficar a mesma coisa no Mozila Firefox*/
+
+   text-transform: uppercase;
+   margin-bottom: 32px;
+}
+
+.about_content h2{
+  font-size: 4rem;
+}
+
+.about_content p{
+  margin-top: 4rem;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.main_btn{
+  font-size: 1.8rem;
+
+  background: #fc00ff;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #00dbde, #fc00ff);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #00dbde, #fc00ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  padding: 20px 60px;
+  border: none;
+  border-radius: 4px;
+  color:#fff;
+  margin-top: 2rem;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.35s;
+  outline: none;
+}
+  .main_btn a{
+    position: relative;
+    z-index: 2;
+    color:#fff;
+    text-decoration: none;
+  }
+
+  .main_btn:after{
+    position: absolute;
+    content: '';
+    top:0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #ff1ead;
+    transition: all 0.35s;
+    border-radius: 4px;
+  }
+  .main_btn:hover{
+    color: #fff;
+
+  }
+  .main_btn:hover:after{
+    width: 100%;
+  }
+
+.about_img--container{
+  text-align: center;
+}
+.about_img--card{
+  margin: 10px;
+  height: 500px;
+  width: 500px;
+  border-radius: 4px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #fff;
+  background-image: linear-gradient(to right, #00dbde 0%, #0051ff 100%);
+
+}
+
+.fa-layer-group, .fa-users{
+  font-size: 8rem;
+}
+
+#card-2{
+  background: #fc00ff;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #00dbde, #fc00ff);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #00dbde, #fc00ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+/*MOBILE RESPONSIVE*/
+@media screen and (max-width: 1100px){
+  .about_container{
+    /* Este display com GRID COLUNS, deixa um em cima do outro*/
+    display: grid;
+    grid-template-columns: 1fr;
+
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 0 auto;
+    height: 90%;
+  }
+
+  .about_img--container{
+    /* Este display com JUSTIFY CENTER deixa alinhado o container de imagem e conteudo*/
+    display: flex;
+    justify-content: center;
+  }
+  .about_img--card{
+    height: 425px;
+    width: 425px;
+  }
+
+  .about_content{
+    text-align: center;
+    margin-bottom: 4rem;
+
+  }
+
+  .about_content h1{
+    font-size: 2.5rem;
+    margin-top: 2rem;
+
+  }
+
+  .about_content h2{
+    font-size: 3rem;
+  }
+
+  .about_content p{
+    margin-top: 2rem;
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 480px){
+  .about_img--card{
+    width: 250px;
+    height: 250px;
+
+  }
+  .fa-users, .fa-layer-group{
+    font-size: 4rem;
+  }
+
+  .about_content h1{
+    font-size: 2rem;
+    margin-top: 3rem;
+  }
+
+  .about_content h2{
+    font-size: 2rem;
+  }
+
+  .about_content p{
+    margin-top: 2rem;
+    font-size: 1.5rem;
+  }
+
+  .main_btn{
+    padding: 12px 36px;
+    margin: 2.5rem 0;
+  }
+}
+

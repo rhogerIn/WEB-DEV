@@ -1,0 +1,108 @@
+.services{
+  background: #131313;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 10rem 0;
+
+}
+.services h1{
+  background: #fd95ff;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #fd95ff, #fc00ff);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #fd95ff, #fc00ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+ 
+  
+  background-size: 100%;
+
+   -webkit-background-clip: text; /*Deixar a cor do Backgroud na letra*/
+   -moz-background-clip: text; /*Utilizamos este para ficar a mesma coisa no Mozila Firefox*/
+   
+   -webkit-text-fill-color: transparent; /*Retirar o azulzin do link*/
+   -moz-text-fill-color: transparent;/*Utilizamos este para ficar a mesma coisa no Mozila Firefox*/
+
+   margin-bottom: 5rem;
+   font-size: 2.5rem;
+}
+
+.services_wrapper{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+}
+.services_card{
+  margin: 10px;
+  height: 425px;
+  width: 300px;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #fff;
+  background-image: linear-gradient(to right, #00dbde 0%, #fc00ff 100%);
+  transition: 0.3s ease-in;
+
+  
+}
+.services_card:nth-child(2){
+  background: #fbd3e9; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #fbd3e9, #bb377d); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #fbd3e9, #bb377d);
+}
+.services_card:nth-child(3){
+  background: #1E9600;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #FF0000, #FFF200, #1E9600);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #FF0000, #FFF200, #1E9600); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
+}
+.services_card:nth-child(4){
+  background: #1E9600;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #00a2ff, #ffffff, #FFF200);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #00a2ff, #ffffff, #FFF200); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
+}
+
+.services_card h2{
+  text-align: center;
+}
+
+.services_card p{
+  text-align: center;
+  margin: 24px;
+  font-size: 20px;
+}
+.services_btn{
+  display: flex;
+  justify-content: center;
+  margin-top: 16px;
+}
+
+.services_card button{
+  color: #fff;
+  padding: 14px 12px;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  background: #131313;
+  font-size: 1rem;
+}
+.services_card button:hover{
+  cursor: pointer;
+}
+.services_card:hover{
+  transform: scale(1.075);
+  transition: 0.3s ease-in;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1300px){
+  .services_wrapper{
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media screen and (max-width: 768px){
+  .services_wrapper{
+    grid-template-columns: 1fr;
+  }
+}
